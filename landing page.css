@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: wheat;
+}
+
+header {
+    background-color: lightseagreen;
+    color: black;
+    padding: 1rem;
+   font-weight: 600;
+    text-align: center;
+}
+
+header nav ul {
+    list-style:none;
+    margin: 0;
+    padding-left: 220px;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header nav a {
+    color: black;
+    text-decoration: none;
+}
+header nav  a:hover {
+    color: yellow;
+    text-decoration: underline;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+    background-image: url(https://graphicdesignjunction.com/wp-content/uploads/2015/01/001_logo_design.jpg);
+    background-position:center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+   text-align: center;
+
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family:'Times New Roman', Times, serif;
+    color: blue;
+}
+
+.hero p {
+    font-size: 1.2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: green;
+    color: #fff;
+    border: none;
+
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.services {
+    background: #CC95C0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    padding: 2rem;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-decoration: underline; 
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-decoration: underline; 
+}
+
+.service p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.service img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.portfolio {
+    /*found background  color in browser*/
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    text-align: center; 
+}
+
+.portfolio h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#projects {
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.6);
+
+}
+#projects h2 {
+    color: white;
+}
+.project {  
+    text-align: center;
+
+}
+
+.project img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.project h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.project p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.testimonials {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;    
+    padding: 2em;
+    text-align: center;
+}
+
+.testimonials h2 {
+    text-decoration: underline;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.testimonial h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    font-size: 1em;
+    color: wheat;
+}
+.contact{
+    background: #F1F2B5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact button{
+width: 70px;
+height: 20px;
+margin-bottom: 20px;
+}
+
+footer {
+    background-color:black;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 2em;
+    }
+
+    .service {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .service h3,
+    .service p { flex: 1;
+        margin-bottom: 0;
+    }
+
+    .service img {
+        max-width: 100%;
+    }
+
+    .project {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .project h3,
+    .project p {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    .project img {
+        max-width: 100%;
+    }
+
+    .testimonial {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .testimonial p,
+    .testimonial h3,
+    .testimonial span {
+        flex: 1;
+        margin-bottom: 0;
+    }
+}
